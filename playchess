@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>love</title>
+	<style type="text/css" media="screen">
+	 #yue{
+	 	border-collapse: collapse;
+	 	border-spacing: 0;
+	 	width: 300px;
+	 	height: 300px;
+	 	border: 1px #000 solid;
+	 }
+
+	 table tr{
+	 	width: 100%;
+	 	height: 20px;
+	 }
+
+	 table tr td{
+	 	width: 20px;
+	 	height: 20px;
+	 	border: 1px #000 solid;
+	 }
+	</style>
+</head>
+
+<body>
+	<table id="yue">
+		 <tr>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>	
+		   <td></td>
+		   <td></td>
+		 </tr>
+		 <tr>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>	
+		   <td></td>
+		   <td></td>
+		 </tr>
+		 <tr>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>	
+		   <td></td>
+		   <td></td>
+		 </tr>
+		 <tr>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>	
+		   <td></td>
+		   <td></td>
+		 </tr>
+		 <tr>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>	
+		   <td></td>
+		   <td></td>
+		 </tr>
+		 <tr>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>	
+		   <td></td>
+		   <td></td>
+		 </tr>
+		 <tr>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>	
+		   <td></td>
+		   <td></td>
+		 </tr>
+		 <tr>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>	
+		   <td></td>
+		   <td></td>
+		 </tr>
+		 <tr>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>	
+		   <td></td>
+		   <td></td>
+		 </tr>
+		 <tr>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>
+		   <td></td>	
+		   <td></td>
+		   <td></td>
+		 </tr>
+	</table>
+	<script>
+		var ceshi = document.getElementById("yue");
+		var num = 1;
+		ceshi.onclick = function(e){
+			//debugger;
+			num++;
+			e.target.style.background = num%2?"red":"#000";
+		}
+
+		ceshi.ondblclick = function(e){
+			e.target.style.background = "#fff";
+		}
+	</script>
+</body>
+</html>
