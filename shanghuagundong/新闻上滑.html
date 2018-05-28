@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>test</title>
+<script type="text/javascript" src="jquery.js"></script>
+
+<style type="text/css">
+*{
+    margin:0;
+    padding:0;
+}
+.tipsList{
+    width:500px;
+    height:20px;
+    line-height:20px;
+    font-size:14px;
+    background:#eee;
+    border-radius:5px;
+    text-align:center;
+    overflow:hidden;
+    margin:50px auto;
+    
+}
+.tipsList ul{
+    position:relative;
+}
+.tipsList ul li{
+    list-style:none;
+    position:absolute;
+    width:100%;
+
+}
+</style>
+</head>
+<body>
+ <div class="tipsList">
+    <ul>
+        <li>打开房间看风景咖啡</li>
+        <li>看似简单两节课的积分</li>
+    </ul>
+</div>
+<script type="text/javascript">
+var h=$(".tipsList").height();
+
+          $(".tipsList ul li").each(function(){
+              $(this).css({top:$(this).index()*h+'px'});
+          });
+
+          setInterval(ctxtslide,3000);   //定时器分开写
+          function ctxtslide() {
+              var disapear=$(".tipsList ul li").first();
+              var clone=$(".tipsList ul li").first().clone();//克隆，后面就用这个克隆的
+              clone.css({top:($(".tipsList ul li").length*h)+"px"});
+              $(".tipsList ul").append(clone);
+              $(".tipsList ul li").each(function(){
+                  var top=parseInt($(this).css('top'));
+                  top-=h;
+                  $(this).animate({"top":top+'px'},1000,function () {
+                      disapear.remove();
+                  });
+              });
+          }
+</script>
+</body>
+</html>
