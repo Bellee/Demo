@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>弹出框时加蒙板</title>
+	<link rel="stylesheet" href="">
+	<style>
+	     body{font-size: 24px;}
+		.ui-dialog { position:fixed;top: 0px; left: 0px;width: 100%;height: 100%;z-index:9999;display:none;
+ -webkit-box-orient: horizontal;-webkit-box-pack: center; -webkit-box-align: center; background: rgba(0, 0, 0, 0.4);display: none; }
+       .ui-dialog.show {display: -webkit-box;display:block; }
+       .ui-dialog-cnt{ position:absolute; bottom:0; width:80%; left:10%;}
+
+        .contact-cnt{ position: absolute;width:80%; background:#fff; border-radius:0.4rem; left:10%; top:50%; margin-top:-2.1rem;}
+.contact-cnt .num{ font-size:0.64rem; font-weight:bold; font-family:Arial, Helvetica, sans-serif; height:2.5rem; line-height:2.5rem; text-align:center;}
+.contact-cnt .info{font-size:0.64rem; font-weight:bold; font-family:Arial, Helvetica, sans-serif;  padding-top:1.5rem; padding-bottom:1rem;text-align:center;}
+.contact-cnt .info span{ display:block; margin-bottom:0.5rem; font-weight:normal;}
+.telbtn{ border-top:1px solid #f0f0f0;}
+.telbtn a{ color:#126fe3; position:relative; width:50%; text-align:center; text-align:center; font-size:0.6rem; display:inline-block; float:left;height:1.8rem; line-height:1.8rem;}
+.telbtn a:first-child:after{ content:""; display:block; position:absolute; right:0; top:0; width:1px; height:100%; background:#f0f0f0;}
+	</style>
+</head>
+<body>
+	<button id="contact-he">联系他</button>
+	<div class="ui-dialog delect-dialog" id="dialog01">
+        <div class="contact-cnt">
+          <div class="contactbox">
+            <p class="num" style="font-weight:normal;">15678899900</p>
+            <div class="telbtn"> <a class="toyes" href="javascript:void(0);">确定</a> <a class="cancel" href="javascript:void(0);">取消</a ></div>
+          </div>
+        </div>
+      </div>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script>
+    $(document).ready(function(){
+ 
+   $(".cancel").click(function(){
+		  $(".ui-dialog").removeClass("show")  
+	   })
+   $("#contact-he").click(function(){
+ 	   $("#dialog01").addClass("show");
+	   $(".toyes").click(function(){
+ 		  window.location.href="tanchukuang.html"; 
+   		 })
+  	  })
+})
+</script>
+</body>
+</html>
