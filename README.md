@@ -32,3 +32,19 @@
 8.日历插件使用            </br>    
 
 ![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/bootstrap-datetimepicker1.png)   </br>
+
+9.div+css可以实现图片等比例缩放
+<div style="width:50px;height:40px">
+  <img src="a.jpg">
+  <!--这里我们假如图片的实际尺寸是320X320-->
+</div>
+根据上面4个css可以知道：
+图片被缩放后在div的尺寸是：
+width:50px;（因为图片的width:100%）
+height:50px（这里height是在width:100%被缩放后的尺寸。）
+我们可以发现这个50px的高度仍然超出了div的40px的高度,不符合max-height
+这个时候，max-height:100%;就会发挥作用，
+在max-height:100%;的作用下，图片被缩放后在div的尺寸是：
+width:40px;
+height:40px;
+这个尺寸符合max-height和max-width
