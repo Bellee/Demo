@@ -35,7 +35,7 @@
 
 9.div+css可以实现图片等比例缩放
 <div style="width:50px;height:40px">   </br>
-  <img src="XXXXX">    </br>
+  <img>    </br>
   <!--这里我们假如图片的实际尺寸是320X320-->    </br>
 </div>     </br>
 根据上面4个css可以知道：    </br>
