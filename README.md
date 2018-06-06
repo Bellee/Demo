@@ -51,3 +51,8 @@ height:50px（这里height是在width:100%被缩放后的尺寸。）    </br>
 width:40px;    </br>
 height:40px;    </br>
 这个尺寸符合max-height和max-width    </br>
+
+10.css显示图片中间区域</br>
+![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/picturemode2.png)   </br>
+![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/picturemode1.png)   </br>
+![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/picturemode3.png)   </br>
