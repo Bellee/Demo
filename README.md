@@ -2,19 +2,52 @@
 可以使用的一些示例
 
 1.利用伪元素做的照片展示     </br>
-2.类似下围棋的小Demo     </br>
-![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/playchess.png)
-3.HTML5利用Canvas模拟上下扫描动画实现     </br>
-![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/scan.png)
-4.tab导航向左滑动切换页面     </br>
-![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/mui-tab.png)
-5.弹出框后加蒙版    </br>
-![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/tanchumengban.png)
-6.animate动画滑出侧边栏     </br>
-![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/animate-siderbar.png)
-7.日历签到打卡，转盘抽奖    </br>
-![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/Attendance-Calendar1.png)
 
-![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/Attendance-Calendar2.png)
+2.类似下围棋的小Demo     </br>
+
+![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/playchess.png)   </br>
+
+3.HTML5利用Canvas模拟上下扫描动画实现     </br>
+
+![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/san.png)   </br>
+
+4.tab导航向左滑动切换页面     </br>
+
+![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/mui-tab.png)   </br>
+
+5.弹出框后加蒙版    </br>
+
+![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/tanchumengban.png)   </br>
+
+6.animate动画滑出侧边栏     </br>
+
+![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/animate-siderbar.png)   </br>
+
+7.日历签到打卡，转盘抽奖    </br>
+
+![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/Attendance-Calendar1.png)   </br>
+
+![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/Attendance-Calendar2.png)   </br>
+
 8.日历插件使用            </br>    
-![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/bootstrap-datetimepicker1.png)
+
+![image](https://github.com/bellee/Demo/blob/master/readme_add_pic/bootstrap-datetimepicker1.png)   </br>
+
+9.div+css可以实现图片等比例缩放      </br>
+div style="width:50px;height:40px"  div  </br>  
+img{
+ width:auto;
+ height:auto;
+ max-width:100%;
+ max-height:100%;
+}
+根据上面4个css可以知道：    </br>
+图片被缩放后在div的尺寸是：    </br>
+width:50px;（因为图片的width:100%）    </br>
+height:50px（这里height是在width:100%被缩放后的尺寸。）    </br>
+我们可以发现这个50px的高度仍然超出了div的40px的高度,不符合max-height    </br>
+这个时候，max-height:100%;就会发挥作用，    </br>
+在max-height:100%;的作用下，图片被缩放后在div的尺寸是：    </br>
+width:40px;    </br>
+height:40px;    </br>
+这个尺寸符合max-height和max-width    </br>
