@@ -1,5 +1,5 @@
 # Demo
-13.## 图片自适应  </br>
+## 13.图片自适应
 背景图片自适应：background-size:cover/contain   </br>
 图片自适应：object-fit 属性值object-fit:fill/contain/cover/none/scale-down   </br>
 fill:默认值，填满不保证保持原有比例   </br>
